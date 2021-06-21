@@ -1,10 +1,8 @@
-# mavlnk_bms mavlink example parse
+# mavlink_demo
 
 To run the example
 
-  download and unzip the source to your chosen source directory from
-
-    https://github.com/kwikius/mavlnk_demo/archive/master.zip
+  download and unzip the source to your chosen source directory 
 
   Navigate to the source directory and invoke make
 
@@ -27,7 +25,7 @@ To run the example
 
 ```
 setting baud
-sp initialised ok
+input "/dev/ttyACM0" opened ok
 heartbeat
 sys status
 heartbeat

@@ -1,7 +1,9 @@
-#include "mav_type.hpp"
-#include <cstdio>
 
-bms::mavlink::mav_type bms::mavlink::get_mav_type( ::mavlink_message_t * pmsg)
+
+#include "mav_type.hpp"
+
+
+mavlink::mav_type mavlink::get_mav_type( ::mavlink_message_t * pmsg)
 {
    uint8_t result = mavlink_msg_heartbeat_get_type(pmsg);
 
@@ -47,7 +49,7 @@ namespace {
 
 }
 
-const char* bms::mavlink::get_mav_type_name( mavlink_message_t * pmsg)
+const char* mavlink::get_mav_type_name( mavlink_message_t * pmsg)
 {
    uint8_t idx = static_cast<uint8_t>(get_mav_type(pmsg));
 
